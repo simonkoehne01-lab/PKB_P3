@@ -1,0 +1,29 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Windows junk (just in case)
+Thumbs.db
+ehthumbs.db
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python (if any scripts are added later)
+__pycache__/
+*.py[cod]
+.env
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
+# R (if any R scripts are added)
+.Rhistory
+.RData
