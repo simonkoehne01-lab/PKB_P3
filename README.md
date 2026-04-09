@@ -2,7 +2,7 @@
 
 **Course:** KIN 7518 Social Issues in Sport | Louisiana State University  
 **Due:** Monday, April 28, 2026  
-**Instructor:** Dr. Yiqian Qian
+**Instructor:** Dr. Qian
 
 ---
 
