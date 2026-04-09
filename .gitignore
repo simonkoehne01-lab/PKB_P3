@@ -1,3 +1,9 @@
+# Data files (datasets, exports, documents — do not commit)
+*.xlsx
+*.csv
+*.json
+*.pdf
+
 # macOS system files
 .DS_Store
 .AppleDouble
