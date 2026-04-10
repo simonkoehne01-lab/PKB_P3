@@ -248,7 +248,7 @@ Panel A addresses the temporal dimension of parasocial politicization — showin
 
 **The Visualization:**
 
-![Two-panel mockup: Panel A shows a time-series line chart of comment volume across YouTube, Instagram, and X/Twitter by week relative to the Break 50 air date, with vertical markers for the air date and a downstream political event. Panel B shows a grouped bar chart of mean retweets per post by follower tier (Low/Medium/High) and verification status (Verified/Unverified) on X/Twitter. Hypothetical data only.](/Users/simon/.gemini/antigravity/brain/04e81e79-e67c-444c-a3bc-4e12fa88be84/p3_b50_mockup_visualization_1775692540333.png)
+![Two-panel mockup: Panel A shows a time-series line chart of comment volume across YouTube, Instagram, and X/Twitter by week relative to the Break 50 air date, with vertical markers for the air date and a downstream political event. Panel B shows a grouped bar chart of mean retweets per post by follower tier (Low/Medium/High) and verification status (Verified/Unverified) on X/Twitter. Hypothetical data only.](../Images/P3_B50_Mockup_Visualization.png)
 
 *Note: This is a preliminary mockup with hypothetical data to demonstrate the intended format and expected patterns.*
 
