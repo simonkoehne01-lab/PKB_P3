@@ -112,17 +112,27 @@ All 1,008 X records will be used for user-level analysis (filtering to English-o
 | **Amplification — Retweets** | Count of retweets per post; primary amplification indicator | `retweets count` |
 | **Amplification — Likes** | Count of likes per post; secondary engagement indicator | `likes` |
 | **Amplification — Views** | Count of views per post; reach indicator | `Comment views` |
-| **Partisan Content** | Binary: does the post contain pro-Trump or anti-Trump framing? Coded via keyword scheme | `contents` (keyword detection) |
+| **Partisan Content** | Binary: does the post contain pro-Trump or anti-Trump framing? Coded via two-tier keyword scheme (see below) | `contents` (keyword detection) |
 
-**Partisan Keyword Coding Scheme:**
+> *Revised in response to instructor feedback (April 2026): ambiguous single-word terms have been separated from unambiguous phrases and now require co-occurrence with a political anchor to trigger partisan coding. This prevents sport-neutral language (e.g., "great shot," "winning the hole," "all-American course") from being falsely classified as partisan.*
+
+**Tier 1 — Unambiguous triggers (fire alone, no co-occurrence required):**
 
 | Category | Keywords / Phrases |
 |----------|--------------------|
-| **Pro-Trump** | "great," "MAGA," "legend," "patriot," "Trump 2024," "love Trump," "USA," "winning," "based," "he will be president," "Trump nation," "best president," "genius," "American," "make America" |
-| **Anti-Trump** | "criminal," "traitor," "disgrace," "embarrassing," "felon," "indicted," "clown," "dangerous," "ruin," "fraud," "not my president," "lock him up," "fascist," "shameful," "unfit" |
-| **Sport-Neutral** | Comments with neither pro- nor anti-Trump keywords; focused on golf, DeChambeau, the course, or the show itself — coded as Non-Partisan Sport Discourse |
+| **Pro-Trump** | `MAGA`, `Trump 2024`, `love Trump`, `best president`, `make America`, `Trump nation`, `he will be president` |
+| **Anti-Trump** | `felon`, `fascist`, `lock him up`, `indicted`, `not my president`, `criminal`, `traitor`, `fraud`, `clown`, `unfit` |
 
-*Coding rule:* Comments may be assigned to **Pro-Trump**, **Anti-Trump**, or **Non-Partisan Sport** categories. If a comment contains keywords from both partisan categories, two coders independently assign the dominant frame; disagreements resolved by discussion. The rate of dual-coded comments will be reported.
+**Tier 2 — Ambiguous terms (only trigger if co-occurring within the same comment with ≥1 Tier 1 keyword OR an explicit reference to Trump, politics, president, MAGA, or the election):**
+
+| Category | Ambiguous Terms Requiring Political Anchor |
+|----------|--------------------------------------------|
+| **Pro-Trump** | `great`, `winning`, `legend`, `genius`, `patriot`, `based`, `USA`, `American` |
+| **Anti-Trump** | `disgrace`, `embarrassing`, `dangerous`, `ruin`, `shameful` |
+
+**Sport-Neutral:** Comments containing no Tier 1 triggers and no Tier 2 terms with a political anchor are coded as **Non-Partisan Sport Discourse**.
+
+*Coding rule:* Comments may be assigned to **Pro-Trump**, **Anti-Trump**, or **Non-Partisan Sport** categories. A comment containing Tier 2 terms without any political anchor defaults to Non-Partisan Sport. If a comment contains keywords from both partisan categories, two coders independently assign the dominant frame; disagreements resolved by discussion. The rate of dual-coded comments will be reported as a quality check. A **false-positive spot-check** will be run on a random sample of 100 comments flagged by Tier 2 terms only (no Tier 1 present) before applying the full scheme to the ~48K corpus, consistent with the instructor's recommendation.
 
 ---
 
